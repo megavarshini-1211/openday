@@ -7,7 +7,7 @@ const deptdivAdd = (id, name) => {
 
     deptContainer.classList.add("deptcont");
     deptImg.classList.add("deptimg");
-    deptImg.src = `https://picsum.photos/id/${id}/200/300`; // Use backticks
+    deptImg.src = `https://picsum.photos/id/${id}/200/300`; 
     deptPara.innerHTML = name;
 
     deptContainer.addEventListener("click", () => {
@@ -20,7 +20,7 @@ const deptdivAdd = (id, name) => {
 }
 
 function openDeptPage(id) {
-    fetch(`https://openday.kumaraguru.in/api/v1/department/${id}`) // Use backticks
+    fetch(`https://openday.kumaraguru.in/api/v1/department/${id}`) 
         .then(result => result.json())
         .then(result => {
             console.log(result);
@@ -119,7 +119,7 @@ const setBanner = (id) => {
         }
         banid--;
     }
-    banner.src = `https://picsum.photos/id/${banid}/1080/720`; // Use backticks
+    banner.src = `https://picsum.photos/id/${banid}/1080/720`; 
 }
 
 fetch("https://openday.kumaraguru.in/api/v1/get_banner_images")
