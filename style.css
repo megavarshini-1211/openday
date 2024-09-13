@@ -134,7 +134,7 @@ html {
 }
 
 .deptcont p {
-    font-family: sans-serif; /* Adjust or replace this with the intended font */
+    font-family: sans-serif; 
     padding-left: 1rem;
     font-size: 1.2rem;
 }
@@ -145,16 +145,6 @@ html {
 }
 
 @media screen and (max-width: 800px) {
-    /* #search-input {
-        top: 20%;
-        right: 1%;
-        width: 12rem;
-    }
-
-    .department-head {
-        padding-top: 2%;
-        font-size: 1.5rem;
-    } */
 }
 
 .pag {
