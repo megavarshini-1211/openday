@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+    <title>Department</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .deptcont {
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            cursor: pointer;
+            font-style: normal;
+            font-size: 1.5rem;
+        }
+
+        .deptcont h1 {
+            color: rgb(8, 8, 80);
+            padding-left: 1rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .deptcont p {
+            font-family: sans-serif;
+            padding-left: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        .deptcont a {
+            display: block; 
+            padding-left: 1rem;
+        }
+
+        .deptcont img {
+            width: 100%;
+            height: 30rem;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="deptcont">
+        <img id="deptimg" src="" alt="">
+        <h1 id="depthead">Department Heading</h1>
+        <p id="deptpara">Department Description</p>
+        <a id="deptlnk" href="link" target="_blank">Department Link</a> 
+    </div>
+</body>
+
+<script>
+    const values = JSON.parse(localStorage.getItem("storageName"));
+    console.log(values);
+
+    const head = document.getElementById("depthead");
+    const img = document.getElementById("deptimg");
+    const description = document.getElementById("deptpara");
+    const link = document.getElementById("deptlnk");
+
+    head.innerHTML = values.name;
+    description.innerHTML = values.description;
+    link.href = values.link;
+    link.innerHTML = values.link;
+    img.src = `https://picsum.photos/id/${values.id}/1080/720`; 
+</script>
+
+</html>

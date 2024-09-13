@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1024">
+    <meta name="robots" content="index,follow">
+     <meta name="description" content="Openday Webpage">
+     <meta name="robots" content="index,follow">
+     <link rel="icon" href="./opendayimages/icon.png">
+    <title>Openday</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:light' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+    <div class="home">
+        <div class="bar">
+            <h1>
+                Open Day
+            </h1>
+        </div>
+        <div class="banner">
+            <img id="ban" src="https://picsum.photos/id/0/1080/720" alt="">
+            <div class="banbtn">
+                <button class="banbtn-left" onclick="setBanner(0)">&#10094;</button>
+                <button class="banbtn-right" onclick="setBanner(1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="dept">
+            <div class="head">
+                <h2>DEPARTMENTS</h2>
+                <div class="sbox">
+                    <input type="text" id="search" placeholder="    Search departments" name="search" />
+                    <img src="./opendayimages/search.png" alt="" width="50px" height="50px">
+                </div>
+            </div>
+            <div class="depts"></div>
+            <div class="pag">
+                <button id="page-left">&laquo;</button>
+                <button class="page-btn">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+                <button class="page-btn">6</button>
+                <button class="page-btn">7</button>
+                <button class="page-btn">8</button>
+                <button class="page-btn">9</button>
+                <button class="page-btn">10</button>
+                <button id="page-right">&raquo;</button>
+            </div>
+        </div>
+        <div class="mapbtn">
+            <button onclick="window.location.href='map.html'">Go to Map</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

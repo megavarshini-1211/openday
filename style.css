@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 70%;
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 70rem;
+}
+
+.bar {
+    display: flex;
+    padding: 2rem;
+    background-color: rgb(8, 8, 80);
+    justify-content: center;
+}
+
+.bar h1 {
+    font-size: 4rem;
+    font-style: oblique;
+    font-weight: bolder;
+    color: beige;
+}
+
+.banner {
+    display: flex;
+    max-height: 70%;
+    position: relative;
+    background-color: beige;
+}
+
+.banner img {
+    width: 400rem;
+    position: relative;
+    object-fit: cover;
+    object-position: 0 0;
+}
+
+.banbtn {
+    width: 3rem;
+    height: 4rem;
+    border: none;
+    background-color: rgb(8, 8, 80);
+    color: beige;
+    cursor: grabbing;
+}
+
+.banbtn:hover {
+    background-color: darkkhaki;
+}
+
+.banbtn-left {
+    position: absolute;
+    top: 46%;
+    left: 0;
+}
+
+.banbtn-right {
+    position: absolute;
+    top: 46%;
+    right: 0;
+}
+
+.dept {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    font-size: 2.5rem;
+    flex-wrap: wrap;
+    font-style: normal;
+    font-weight: bolder;
+}
+
+.sbox {
+    text-align: center;
+    align-items: center;
+    position: relative;
+    border-color: gray;
+    border-radius: 20px;
+    left: 29%;
+}
+
+.sbox input[type="text"] {
+    font-size: medium;
+    padding: 10px 40px 10px 15px;
+    border-radius: 20px;
+    transition-property: background-color, border-color, color, box-shadow, filter;
+    transition-duration: 0.5s;
+    border: 1px solid;
+    height: 30px;
+    background-image: url(./opendayimages/search.png);
+    width: 250px; 
+}
+
+.sbox img {
+    position: absolute;
+    pointer-events: none;
+    right: 5px;
+    top: 4px;
+    display: flex;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+
+.depts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.deptcont {
+    width: 20rem;
+    height: 25rem;
+    margin: 1%;
+    border-radius: 1rem;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgb(8, 8, 80);
+    cursor: pointer;
+}
+
+.deptcont p {
+    font-family: sans-serif; /* Adjust or replace this with the intended font */
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+
+.deptimg {
+    width: 100%;
+    height: 90%;
+}
+
+@media screen and (max-width: 800px) {
+    /* #search-input {
+        top: 20%;
+        right: 1%;
+        width: 12rem;
+    }
+
+    .department-head {
+        padding-top: 2%;
+        font-size: 1.5rem;
+    } */
+}
+
+.pag {
+    display: flex;
+    font-style: normal;
+    position: relative;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.pag button {
+    font-size: large;
+    color: rgb(8, 8, 80);
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.pag button.active {
+    background-color: rgb(8, 8, 80);
+    color: beige;
+    border-radius: 10px;
+}
+
+.pag button:hover:not(.active) {
+    background-color: gray;
+}
+
+.mapbtn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: white;
+}
+
+.mapbtn button {
+    height: 4rem;
+    width: 10rem;
+    background-color: rgb(8, 8, 80);
+    color: beige;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.mapbtn button:hover {
+    border: 0.1rem solid;
+    border-color: rgb(8, 8, 80);
+    background-color: beige;
+    color: rgb(8, 8, 80);
+}
