@@ -126,8 +126,8 @@ html {
 .deptcont {
     width: 20rem;
     height: 25rem;
-    margin: 1%;
-    border-radius: 1rem;
+    margin: 5%;
+    border-radius: 20px;
     background-color: white;
     box-shadow: 1px 1px 5px rgb(8, 8, 80);
     cursor: pointer;
